@@ -1,0 +1,28 @@
+.fpx_bold{
+	font-family: 'proxima_nova_altbold';
+}
+.fpx_regular{
+	font-family: 'Proxima Nova';
+}
+.fpx_thin{
+	font-family: 'proxima_nova_ltthin';
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+a{
+	text-decoration: none;
+	@include transition(0.5s);
+}
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.hidden{
+	display: none !important;
+}

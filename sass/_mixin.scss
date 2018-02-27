@@ -1,0 +1,56 @@
+@mixin transition($minute){
+    -moz-transition: all $minute  ease-in-out 0s;
+    -webkit-transition: all $minute ease-in-out 0s;
+    -ms-transition: all $minute ease-in-out 0s;
+    -o-transition: all $minute ease-in-out 0s;
+    transition: all $minute ease-in-out 0s;
+  }
+  
+  @mixin border_radius($border){
+    -moz-border-radius: $border;
+    -webkit-border-radius: $border;
+    border-radius: $border;
+  }
+  
+  @mixin box-sizing{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  @mixin box-shadow ($value) {
+    -webkit-box-shadow: $value;
+    -ms-box-shadow: $value;
+    -o-box-shadow: $value;
+    box-shadow: $value;
+  }
+  @mixin position($top: 0, $right: 0, $bottom: 0, $left: 0){
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+  @mixin padding($top: null, $right: null, $bottom: null, $left: null){
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+  @mixin margin($top: null, $right: null, $bottom: null, $left: null){
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+  @mixin block_layout($top: null, $right: null, $bottom: null, $left: null){
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom; 
+    margin-left: $left;
+  }
+  @mixin transform($value){
+      transform:($value);
+      -webkit-transform:($value);
+      -moz-transform:($value);
+      -ms-transform:($value);
+  }

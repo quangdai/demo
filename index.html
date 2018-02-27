@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <!-- add hightight -->
+    <link rel="stylesheet" href="highlight/styles/default.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <header class="header">
+    	<div class="header-logo">
+    		<a href="#"><img src="images/logo.png"></a>
+    	</div>
+    	<div class="btn-nav-mobile">
+    		<span></span>
+    	</div>
+        <div class="header-account">
+        	<a href="#" class="header-account__register">Don’t have a PW Account?</a>
+        	<a href="#" class="header-account__singin uppercase">Sign Up</a>
+        </div>
+    </header>
+    <nav id="nav">
+    	<ul class="nav-parent">
+    		<a href="#" class="nav-title"><h4>Payalto</h4></a>
+    		<li class="nav-parent__item">
+    			<a href="#">Digital Goods</a>
+    			<ul class="nav-children">
+    				<li class="nav-children__item current-item"><a href="#">Stored widget call</a></li>
+    				<li class="nav-children__item"><a href="#">Non-stored Widget call</a></li>
+    				<li class="nav-children__item"><a href="#">Optional Parameters</a></li>
+    			</ul>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Virtual Currency</a>
+    			<ul class="nav-children">
+    				<li class="nav-children__item"><a href="#">Widget Call</a></li>
+    			</ul>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Callback</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Pingback processing</a>
+    			<ul class="nav-children">
+    				<li class="nav-children__item"><a href="#">Introduction</a></li>
+    				<li class="nav-children__item"><a href="#">HTTP Pingback</a></li>
+    				<li class="nav-children__item"><a href="#">Email pingback</a></li>
+    				<li class="nav-children__item"><a href="#">Expect Response</a></li>
+    			</ul>
+    		</li>
+    	</ul>
+    	<ul class="nav-parent">
+    		<a href="#" class="nav-title"><h4>brick</h4></a>
+    		<li class="nav-parent__item">
+    			<a href="#">Creat oneetime token</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Charge</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Subscription</a>
+    		</li>
+    	</ul>
+    	<ul class="nav-parent">
+    		<a href="#" class="nav-title"><h4>mint</h4></a>
+    		<li class="nav-parent__item">
+    			<a href="#">Get Epin</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Get Balance</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Get avaliable balance</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Redemption</a>
+    		</li>
+    	</ul>
+    	<ul class="nav-parent">
+    		<a href="#" class="nav-title"><h4>Mobiamo</h4></a>
+    		<li class="nav-parent__item">
+    			<a href="#">Price points</a>
+    		</li>
+    	</ul>
+    	<ul class="nav-parent">
+    		<a href="#" class="nav-title"><h4>Tools API</h4></a>
+    		<li class="nav-parent__item">
+    			<a href="#">Bridge  OAuth</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Cancellation</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Coupons</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Delivery Confirmation</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Invoice</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Payment Status</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Payment System</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Bridge OAuth</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Product Details</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">Reporting</a>
+    		</li>
+    		<li class="nav-parent__item">
+    			<a href="#">User Profile</a>
+    		</li>
+    	</ul>
+    </nav>
+    <main class="main-content">
+    	<div class="document">
+			<h2 class="document-title fpx_thin">Digital goods</h2>
+    		<p>Digital Goods API is mainly focused on selling In-game virtual items, services and premium membership with PayAlto.</p>
+    		<section class="document-des">
+	    		<h3 class="fpx_bold">Stored widget call</h3>
+	    		<p>It shows a widget, where stored products in Products section of Merchant Account are available for payment. Both subscription and one-time payment are supported in our products section.</p>
+    		</section>
+    		<div data-oder="1"></div>
+			<section class="document-content">
+				<h4 class="fpx_regular">Parameter:</h4>
+				<table class="document-table document-table__border">
+					<thead>
+					  	<tr>
+					     	<th>Name</th>
+					     	<th>Required</th>
+					     	<th>Format</th>
+					     	<th>Description</th>
+					  	</tr>
+				 	</thead>
+				 	<tbody>
+				 		<tr>
+				 			<td>key</td>
+				 			<td>yes</td>
+				 			<td>String(32)</td>
+				 			<td>Sample: 048c51f8fc834a1467db96b683f16e70 Can be found in General Settings of the Project inside of your Merchant Account</td>
+				 		</tr>
+				 		<tr>
+				 			<td>uid</td>
+				 			<td>yes</td>
+				 			<td>String(64)</td>
+				 			<td>Sample: test@paymentwall.com Not case-sensitive. ID of the end-user in your system (usually it is an email) who is viewing the widget. The maximum length is 64.</td>
+				 		</tr>
+				 		<tr>
+				 			<td>widget</td>
+				 			<td>yes</td>
+				 			<td>String</td>
+				 			<td>Sample: p1_1 Widget code. Can be obtained by Merchant Account -> Projects -> Widgets</td>
+				 		</tr>
+				 		<tr>
+				 			<td>email</td>
+				 			<td>yes</td>
+				 			<td>String</td>
+				 			<td>Sample: test@paymentwall.com Paymentwall will automatically send a payment receipt to the user.</td>
+				 		</tr>
+				 		<tr>
+				 			<td>timestamp</td>
+				 			<td>yes</td>
+				 			<td>String(10)</td>
+				 			<td>Sample: 1477985778 Unix timestamp of the current date</td>
+				 		</tr><tr>
+				 			<td>sign_version</td>
+				 			<td>no</td>
+				 			<td>String</td>
+				 			<td>Sample: 2, 3 Signature Version.</td>
+				 		</tr><tr>
+				 			<td>sign</td>
+				 			<td>no</td>
+				 			<td>String</td>
+				 			<td>Sample: 7633c3b060fa2ddd41283ff d4629ab40 Refer to <a href="#">Signature Calculation.</a></td>
+				 		</tr>
+				 	</tbody>
+				</table>
+			</section>
+			<div data-oder="2"></div>
+			<section class="document-content">
+				<h4>Result:</h4>
+				<p>You will get a URL or iframe by widget object.</p>
+				<table class="document-table">
+					<tr>
+						<td>plan <br> string</td>
+						<td>Identifies the product ID, send back as <span>goodsid</span> parametr in <a href="#">pingbacks.</a> eg: productax123</td>
+					</tr>
+					<tr>
+						<td>period required string</td>
+						<td>day/week/month/year</td>
+					</tr>
+					<tr>
+						<td>period_duration <br>required <br>string</td>
+						<td>Number of peroids mentioned the period parameter. By default minimum duration for recurring in 3 days. This can be adjusted by contacting <a href="mailto:devsupport@paymentwall.com">devsupport@paymentwall.com</a></td>
+					</tr>
+				</table>
+			</section>
+    	</div>
+    	<div class="expcode">
+			<ul class="tab-control">
+				<li class="control-item active" data-tab="javascript"><span>Javasript</span></li>
+				<li class="control-item" data-tab="java"><span>Java</span></li>
+				<li class="control-item" data-tab="php"><span>PHP</span></li>
+				<li class="control-item" data-tab="net"><span>.Net</span></li>
+				<li class="control-item" data-tab="python"><span>Python</span></li>
+			</ul>
+    		<div class="tab-view">
+    			<div id="javascript" class="tab-content active">
+    				<h5>Library:</h5>
+    				<a href="#">https://github.com/paymentwall/paymentwall-java</a>
+    				<h5>Request URL</h5>
+    				<a href="#">https://api.paymentwall.com/api/subscription/</a>
+    				<h5>Request method</h5>
+    				<a href="#">https://api.paymentwall.com/api/subscription/</a>
+    				<h5>Initialize</h5>
+    				<div data-swap="1">
+	    				<per class="code-content">
+	    					<code>
+	    						import com.paymentwall.java.Base;<br>
+
+							        Base.setAppKey("YOUR_APPLICATION_KEY");<br>
+							        Base.setSecretKey("YOUR_SECRET_KEY");<br>
+							        Base.setApiType(Base.API_GOODS); <br>
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Stored Widget Call</h5>
+    				<div data-swap="2">
+	    				<per class="code-content">
+	    					<code>
+	    						import com.paymentwall.java.Widget;<br>
+						      	import com.paymentwall.java.WidgetBuilder;<br>
+						      	import java.util.LinkedHashMap;<br>
+
+					      		WidgetBuilder widgetBuilder = new WidgetBuilder (userid, widgetcode);<br>
+
+						      	widgetBuilder.setExtraParams(new LinkedHashMap<br>
+							      	<String, String>(){<br>
+						          	{<br><br>
+						              	put("email", email);<br>
+						              	put("timestamp", timestamp);<br>
+						          	}<br>
+						      	});<br>
+
+					      		Widget widget = widgetBuilder.build();
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Result Example</h5>
+    				<per class="code-content">
+    					<code>
+    						widget.getHtmlCode();
+    					</code>
+    				</per>
+    			</div>
+    			<div id="java" class="tab-content">
+    				<h5>Library:</h5>
+    				<a href="#">https://github.com/paymentwall/paymentwall-java</a>
+    				<h5>Initialize</h5>
+    				<div data-swap="1">
+	    				<per class="code-content">
+	    					<code>
+    							import com.paymentwall.java.Base;<br>
+						        Base.setApiType(Base.API_GOODS); <br>
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Stored Widget Call</h5>
+    				<div data-swap="2">
+	    				<per class="code-content">
+	    					<code>
+	    						import com.paymentwall.java.Widget;
+						      	import com.paymentwall.java.WidgetBuilder;
+						      	import java.util.LinkedHashMap;
+
+					      		WidgetBuilder widgetBuilder = new WidgetBuilder (userid, widgetcode);
+
+						      	widgetBuilder.setExtraParams(new LinkedHashMap
+							      	<String, String>(){
+						          	{
+						              	put("email", email);
+						              	put("timestamp", timestamp);
+						          	}
+						      	});
+
+					      		Widget widget = widgetBuilder.build();
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Result Example</h5>
+    				<per class="code-content">
+    					<code>
+    						widget.getHtmlCode();
+    					</code>
+    				</per>
+    			</div>
+    			<div id="php" class="tab-content">
+    				<h5>Library:</h5>
+    				<a href="#">https://github.com/paymentwall/paymentwall-java</a>
+    				<h5>Request URL</h5>
+    				<a href="#">https://api.paymentwall.com/api/subscription/</a>
+    				<h5>Initialize</h5>
+    				<div data-swap="1">
+	    				<per class="code-content">
+	    					<code class="java">
+	    						import com.paymentwall.java.Base;<br>
+
+							        Base.setAppKey("YOUR_APPLICATION_KEY");<br>
+							        Base.setSecretKey("YOUR_SECRET_KEY");<br>
+							        Base.setApiType(Base.API_GOODS); <br>
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Stored Widget Call</h5>
+    				<div data-swap="2">
+	    				<per class="code-content">
+	    					<code>
+	    						import com.paymentwall.java.Widget;
+						      	import com.paymentwall.java.WidgetBuilder;
+						      	import java.util.LinkedHashMap;
+
+					      		WidgetBuilder widgetBuilder = new WidgetBuilder (userid, widgetcode);
+
+						      	widgetBuilder.setExtraParams(new LinkedHashMap
+							      	<String, String>(){
+						          	{
+						              	put("email", email);
+						              	put("timestamp", timestamp);
+						          	}
+						      	});
+
+					      		Widget widget = widgetBuilder.build();
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Result Example</h5>
+    				<per class="code-content">
+    					<code>
+    						widget.getHtmlCode();
+    					</code>
+    				</per>
+    			</div>
+    			<div id="net" class="tab-content">
+    				<h5>Library:</h5>
+    				<a href="#">https://github.com/paymentwall/paymentwall-java</a>
+    				<h5>Request URL</h5>
+    				<a href="#">https://api.paymentwall.com/api/subscription/</a>
+    				<h5>Request method</h5>
+    				<a href="#">https://api.paymentwall.com/api/subscription/</a>
+    				<h5>Initialize</h5>
+    				<div data-swap="1">
+	    				<per class="code-content">
+	    					<code class="java">
+	    						import com.paymentwall.java.Base;<br>
+
+							        Base.setAppKey("YOUR_APPLICATION_KEY");<br>
+							        Base.setSecretKey("YOUR_SECRET_KEY");<br>
+							        Base.setApiType(Base.API_GOODS); <br>
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Stored Widget Call</h5>
+    				<div data-swap="2">
+	    				<per class="code-content">
+	    					<code>
+	    						import com.paymentwall.java.Widget;
+						      	import com.paymentwall.java.WidgetBuilder;
+						      	import java.util.LinkedHashMap;
+
+					      		WidgetBuilder widgetBuilder = new WidgetBuilder (userid, widgetcode);
+
+						      	widgetBuilder.setExtraParams(new LinkedHashMap
+							      	<String, String>(){
+						          	{
+						              	put("email", email);
+						              	put("timestamp", timestamp);
+						          	}
+						      	});
+
+					      		Widget widget = widgetBuilder.build();
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Result Example</h5>
+    				<per class="code-content">
+    					<code>
+    						widget.getHtmlCode();
+    					</code>
+    				</per>
+    			</div>
+    			<div id="python" class="tab-content">
+    				<h5>Library:</h5>
+    				<a href="#">https://github.com/paymentwall/paymentwall-java</a>
+    				<h5>Request URL</h5>
+    				<div data-swap="1">
+	    				<per class="code-content">
+	    					<code class="java">
+	    						import com.paymentwall.java.Base;<br>
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Stored Widget Call</h5>
+    				<div data-swap="2">
+	    				<per class="code-content">
+	    					<code>
+	    						import com.paymentwall.java.Widget;
+						      	import com.paymentwall.java.WidgetBuilder;
+						      	import java.util.LinkedHashMap;
+
+					      		WidgetBuilder widgetBuilder = new WidgetBuilder (userid, widgetcode);
+
+						      	widgetBuilder.setExtraParams(new LinkedHashMap
+							      	<String, String>(){
+						          	{
+						              	put("email", email);
+						              	put("timestamp", timestamp);
+						          	}
+						      	});
+
+					      		Widget widget = widgetBuilder.build();
+	    					</code>
+	    				</per>
+    				</div>
+    				<h5>Result Example</h5>
+    				<per class="code-content">
+    					<code>
+    						widget.getHtmlCode();
+    					</code>
+    				</per>
+    			</div>
+    		</div>
+    	</div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
